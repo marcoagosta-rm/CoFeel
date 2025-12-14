@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoFeel — Sesiones de co-working emocional</title>
+  <meta name="description" content="CoFeel ayuda a quienes trabajan en remoto a crear límites claros entre trabajo y vida personal con sesiones breves en vídeo y rituales de desconexión." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: Inter, sans-serif; }
+    html { scroll-behavior: smooth; }
+    .glass { background: rgba(255,255,255,0.12); backdrop-filter: blur(10px); }
+    .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.55)); }
+  </style>
+</head>
+
+<body class="bg-neutral-950 text-white">
+
+  <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-neutral-900/70 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#inicio" class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-emerald-400 rounded-xl"></div>
+        <span class="font-semibold text-lg">CoFeel</span>
+      </a>
+
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#como-funciona" class="hover:text-emerald-300">Cómo funciona</a>
+        <a href="#beneficios" class="hover:text-emerald-300">Beneficios</a>
+        <a href="#galeria" class="hover:text-emerald-300">Galería</a>
+        <a href="#contacto" class="px-4 py-2 bg-emerald-400 text-neutral-900 rounded-full font-semibold hover:bg-emerald-300">Acceso Beta</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative pt-28 pb-24">
+    <div class="absolute inset-0 -z-10">
+      <img src="hero.jpg" class="w-full h-full object-cover">
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Recupera tu presencia y termina el día con calma
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-neutral-200 max-w-2xl">
+        Sesiones breves en vídeo con rituales de apertura y cierre emocional para quienes trabajan en remoto y necesitan límites claros.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#contacto" class="px-6 py-3 bg-emerald-400 text-neutral-900 font-semibold rounded-xl text-center hover:bg-emerald-300">
+          Solicitar acceso a la beta
+        </a>
+        <a href="#como-funciona" class="px-6 py-3 glass rounded-xl text-center hover:bg-white/10">
+          Ver cómo funciona
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="bg-neutral-900 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Cómo funciona</h2>
+        <p class="mt-4 text-neutral-300">
+          CoFeel es un ritual compartido de 25 minutos que ayuda a desconectar mentalmente del trabajo.
+        </p>
+
+        <ul class="mt-6 space-y-6">
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-xl bg-emerald-400 text-neutral-900 grid place-items-center font-bold">1</span>
+            <div>
+              <h3 class="font-semibold">Reserva tu franja horaria</h3>
+              <p class="text-neutral-300">Recibes el enlace de la sala virtual</p>
+            </div>
+          </li>
+
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-xl bg-emerald-400 text-neutral-900 grid place-items-center font-bold">2</span>
+            <div>
+              <h3 class="font-semibold">Ritual de apertura</h3>
+              <p class="text-neutral-300">Respiración guiada y cierre de notificaciones</p>
+            </div>
+          </li>
+
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-xl bg-emerald-400 text-neutral-900 grid place-items-center font-bold">3</span>
+            <div>
+              <h3 class="font-semibold">Sesión silenciosa</h3>
+              <p class="text-neutral-300">Cámara encendida para presencia compartida</p>
+            </div>
+          </li>
+
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-xl bg-emerald-400 text-neutral-900 grid place-items-center font-bold">4</span>
+            <div>
+              <h3 class="font-semibold">Ritual de cierre</h3>
+              <p class="text-neutral-300">Una palabra sobre tu estado emocional</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden border border-white/10">
+        <img src="gallery2.jpg" class="w-full h-96 object-cover">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="bg-neutral-950 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+      <div class="glass p-6 rounded-3xl border border-white/10">
+        <h3 class="text-xl font-semibold">Un final de jornada real</h3>
+        <p class="mt-3 text-neutral-300">Desconecta mentalmente del trabajo sin esfuerzo</p>
+      </div>
+
+      <div class="glass p-6 rounded-3xl border border-white/10">
+        <h3 class="text-xl font-semibold">Conexión humana ligera</h3>
+        <p class="mt-3 text-neutral-300">Motivación sin presión social</p>
+      </div>
+
+      <div class="glass p-6 rounded-3xl border border-white/10">
+        <h3 class="text-xl font-semibold">Foco protegido</h3>
+        <p class="mt-3 text-neutral-300">Cámara activa y micrófono apagado</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="bg-neutral-900 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold">Galería</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+        <img src="gallery1.jpg" class="rounded-3xl border border-white/10 object-cover w-full h-56">
+        <img src="gallery2.jpg" class="rounded-3xl border border-white/10 object-cover w-full h-56">
+        <img src="gallery3.jpg" class="rounded-3xl border border-white/10 object-cover w-full h-56">
+        <img src="gallery4.jpg" class="rounded-3xl border border-white/10 object-cover w-full h-56">
+        <img src="gallery5.jpg" class="rounded-3xl border border-white/10 object-cover w-full h-56">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-b from-neutral-950 to-neutral-900 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center p-10 glass rounded-3xl border border-white/10">
+
+      <div>
+        <h3 class="text-2xl md:text-3xl font-bold">Un gesto sencillo para cerrar el modo trabajo</h3>
+        <p class="mt-4 text-neutral-200">Un ritual compartido que te ayuda a desconectar con calma</p>
+        <a href="#contacto" class="mt-6 inline-block px-6 py-3 bg-emerald-400 text-neutral-900 rounded-xl font-bold hover:bg-emerald-300">
+          Únete a la beta
+        </a>
+      </div>
+
+      <img src="gallery1.jpg" class="rounded-3xl object-cover w-full h-full border border-white/10">
+
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section id="contacto" class="bg-neutral-950 py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center">Solicitar acceso a la beta</h2>
+
+      <form id="cofeel-form" class="mt-12 grid gap-6 bg-neutral-900 p-8 rounded-3xl border border-white/10">
+
+        <input type="text" name="nombre" placeholder="Nombre" required class="px-4 py-3 bg-neutral-800 rounded-xl border border-white/10">
+        <input type="email" name="email" placeholder="Correo electrónico" required class="px-4 py-3 bg-neutral-800 rounded-xl border border-white/10">
+        <textarea name="mensaje" rows="4" placeholder="Cuéntanos brevemente tu situación" class="px-4 py-3 bg-neutral-800 rounded-xl border border-white/10"></textarea>
+
+        <label class="flex items-center gap-3 text-neutral-300 text-sm">
+          <input type="checkbox" required class="h-5 w-5 bg-neutral-800 border-white/20 rounded">
+          Acepto el tratamiento de mis datos para ser contactado
+        </label>
+
+        <button type="submit" class="px-6 py-3 bg-emerald-400 text-neutral-900 rounded-xl font-bold hover:bg-emerald-300">
+          Enviar solicitud
+        </button>
+
+        <p id="form-msg" class="hidden text-sm"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral-900 py-10">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between text-neutral-300 text-sm">
+      <p>© <span id="year"></span> CoFeel</p>
+      <p>Contacto: <a href="mailto:marcoagos@hotmail.com" class="underline decoration-emerald-400">marcoagos@hotmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
